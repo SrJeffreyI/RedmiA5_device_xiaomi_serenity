@@ -1,0 +1,47 @@
+# Gráficos
+vendor/lib64/hw/gralloc.default.so
+vendor/lib64/hw/hwcomposer.unisoc.so
+vendor/lib64/hw/vulkan.ums9230.so
+vendor/lib64/hw/dpu.unisoc.so
+vendor/lib64/hw/gsp.unisoc.so
+
+# Áudio
+vendor/bin/hw/android.hardware.audio.service
+vendor/lib64/hw/audio.primary.default.so
+vendor/lib64/hw/audio.bluetooth.ums9230.so
+vendor/lib64/hw/audio.usb.default.so
+vendor/lib64/hw/audio.r_submix.default.so
+
+# Bluetooth e Wi-Fi
+vendor/bin/hw/android.hardware.bluetooth@1.1-service.unisoc
+vendor/bin/hw/android.hardware.wifi@1.0-service-lazy
+vendor/lib64/hw/libwifi-hal-unisoc.so
+
+# Biometria (Impressão Digital)
+vendor/bin/hw/android.hardware.biometrics.fingerprint-service
+vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.silead.default.so
+
+# Câmera
+vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl-sprd.so
+vendor/lib64/hw/camera.unisoc.so
+
+# USB e Power
+vendor/bin/hw/android.hardware.usb-service.unisoc
+vendor/bin/hw/vendor.unisoc.hardware.power-service
+
+# Rádio e Rede
+vendor/bin/hw/vendor.sprd.hardware.network-service
+vendor/bin/urild
+
+# Xiaomi Specific
+vendor/bin/hw/vendor.xiaomi.hardware.misys@4.0-service
+vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
+
+# Boot Control (A/B)
+vendor/lib64/hw/unisoc.bootctrl.so
+vendor/bin/hw/vendor.sprd.hardware.boot@1.2-service
+
+# Firmware
+vendor/firmware/
