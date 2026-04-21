@@ -1,47 +1,35 @@
-# Gráficos
-vendor/lib64/hw/gralloc.default.so
-vendor/lib64/hw/hwcomposer.unisoc.so
-vendor/lib64/hw/vulkan.ums9230.so
-vendor/lib64/hw/dpu.unisoc.so
-vendor/lib64/hw/gsp.unisoc.so
+#
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
 
-# Áudio
-vendor/bin/hw/android.hardware.audio.service
+# Audio
+vendor/lib/hw/audio.primary.ums9230.so
 vendor/lib64/hw/audio.primary.default.so
-vendor/lib64/hw/audio.bluetooth.ums9230.so
-vendor/lib64/hw/audio.usb.default.so
-vendor/lib64/hw/audio.r_submix.default.so
+vendor/etc/audio_policy_configuration.xml
 
-# Bluetooth e Wi-Fi
+# Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service.unisoc
-vendor/bin/hw/android.hardware.wifi@1.0-service-lazy
-vendor/lib64/hw/libwifi-hal-unisoc.so
+vendor/lib64/libbluetooth_jni.so
 
-# Biometria (Impressão Digital)
-vendor/bin/hw/android.hardware.biometrics.fingerprint-service
-vendor/lib64/hw/fingerprint.goodix.default.so
-vendor/lib64/hw/fingerprint.silead.default.so
+# Camera
+vendor/lib64/libcamcommon.so
 
-# Câmera
-vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
-vendor/lib64/hw/android.hardware.camera.provider@2.4-impl-sprd.so
-vendor/lib64/hw/camera.unisoc.so
+# Display / Graphics (Mali)
+vendor/lib/libGLES_mali.so
+vendor/lib/egl/libGLES_mali.so
+vendor/lib64/libGLES_mali.so
+vendor/lib64/egl/libGLES_mali.so
+vendor/lib64/hw/gralloc.default.so
+vendor/etc/gralloc/gralloc.xml
 
-# USB e Power
-vendor/bin/hw/android.hardware.usb-service.unisoc
-vendor/bin/hw/vendor.unisoc.hardware.power-service
+# Sensors (MultiHAL)
+vendor/bin/hw/android.hardware.sensors-service.multihal
+vendor/lib64/android.hardware.sensors@2.X-sprd_subhal.so
+vendor/etc/init/android.hardware.sensors-service-multihal.rc
+vendor/etc/vintf/manifest/android.hardware.sensors-multihal.xml
 
-# Rádio e Rede
-vendor/bin/hw/vendor.sprd.hardware.network-service
-vendor/bin/urild
-
-# Xiaomi Specific
-vendor/bin/hw/vendor.xiaomi.hardware.misys@4.0-service
-vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
-
-# Boot Control (A/B)
-vendor/lib64/hw/unisoc.bootctrl.so
-vendor/bin/hw/vendor.sprd.hardware.boot@1.2-service
-
-# Firmware
-vendor/firmware/
+# Unisoc Specific Blobs
+vendor/bin/cp_diskserver
+vendor/bin/engpc

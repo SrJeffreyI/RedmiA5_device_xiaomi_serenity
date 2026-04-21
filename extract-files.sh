@@ -22,6 +22,9 @@ if [[ ! -f "${HELPER}" ]]; then
     exit 1
 fi
 
+# Source the helper to make functions like setup_vendor available
+source "${HELPER}"
+
 # Default to generating makefiles
 SETUP_MAKEFILES=true
 
